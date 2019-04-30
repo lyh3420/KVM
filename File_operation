@@ -1,0 +1,11 @@
+l2 = []
+sum = 0
+f = open('a.txt',encoding='utf-8')
+for i in f:
+    i=(i.strip().split())
+    li = {'name':i[0],'price':i[1],'amount':i[2]}
+    l2.append(li)
+    cost = int(i[1]) * int(i[2])
+    sum =sum +cost
+print(sum)
+print(l2)
